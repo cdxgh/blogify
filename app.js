@@ -2,6 +2,9 @@ const path = require("path");
 const express = require("express");
 const mongoose = require("mongoose");
 const cookiePaser = require("cookie-parser");
+mongoose.set('strictQuery', true);
+mongoose.set('strictQuery', false);
+
 
 const Blog = require("./models/blog");
 
