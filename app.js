@@ -18,7 +18,7 @@ const {
 const app = express();
 const PORT = process.env.PORT || 8000;
 
-mongoose.connect('mongodb://127.0.0.1:27017/Blogify', {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
